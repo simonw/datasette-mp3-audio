@@ -29,6 +29,8 @@ Once installed, any cells with a value that ends in `.mp3` and starts with eithe
 <audio controls src="... value ...">Audio not supported</audio>
 ```
 
+A "Play X MP3s on this page" button will be added to athe top of any table page listing more than one MP3.
+
 ## Development
 
 To set up this plugin locally, first checkout the code. Then create a new virtual environment:
