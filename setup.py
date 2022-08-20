@@ -34,5 +34,10 @@ setup(
     entry_points={"datasette": ["mp3_audio = datasette_mp3_audio"]},
     install_requires=["datasette"],
     extras_require={"test": ["pytest", "pytest-asyncio", "sqlite-utils"]},
+    package_data={
+        "datasette_mp3_audio": [
+            "static/*.js",
+        ],
+    },
     python_requires=">=3.7",
 )

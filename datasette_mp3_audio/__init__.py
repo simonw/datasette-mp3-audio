@@ -3,6 +3,15 @@ from markupsafe import Markup, escape
 
 
 @hookimpl
+def extra_js_urls(columns, datasette):
+    if not columns:
+        return None
+    return [
+        datasette.urls.static_plugins("datasette-mp3-audio", "datasette-mp3-audio.js")
+    ]
+
+
+@hookimpl
 def render_cell(value):
     if not isinstance(value, str):
         return
