@@ -27,12 +27,12 @@ setup(
     license="Apache License, Version 2.0",
     classifiers=[
         "Framework :: Datasette",
-        "License :: OSI Approved :: Apache Software License"
+        "License :: OSI Approved :: Apache Software License",
     ],
     version=VERSION,
     packages=["datasette_mp3_audio"],
     entry_points={"datasette": ["mp3_audio = datasette_mp3_audio"]},
     install_requires=["datasette"],
-    extras_require={"test": ["pytest", "pytest-asyncio"]},
+    extras_require={"test": ["pytest", "pytest-asyncio", "sqlite-utils"]},
     python_requires=">=3.7",
 )

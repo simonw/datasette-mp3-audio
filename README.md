@@ -15,7 +15,11 @@ Install this plugin in the same environment as Datasette.
 
 ## Usage
 
-Usage instructions go here.
+Once installed, any cells with a value that ends in `.mp3` and starts with either `http://` or `/` or `https://` will be turned into an embedded HTML audio element like this:
+
+```html
+<audio controls src="... value ...">Audio not supported</audio>
+```
 
 ## Development
 
