@@ -15,9 +15,7 @@ Install this plugin in the same environment as Datasette.
 
 ## Demo
 
-Try this plugin out in [Datasette Lite](https://lite.datasette.io/) here:
-
-- [ScotRail announcements demo](https://lite.datasette.io/?install=datasette-mp3-audio&csv=https://gist.githubusercontent.com/simonw/0a30d52feeb3ff60f7d8636b0bde296b/raw/c078a9e5a0151331e2e46c04c1ebe7edc9f45e8c/scotrail-announcements.csv#/data/scotrail-announcements?_facet=Category)
+Try this plugin at [https://scotrail.datasette.io/scotrail/announcements](https://scotrail.datasette.io/scotrail/announcements)
 
 The demo uses ScotRail train announcements from [matteason/scotrail-announcements-june-2022](https://github.com/matteason/scotrail-announcements-june-2022).
 
