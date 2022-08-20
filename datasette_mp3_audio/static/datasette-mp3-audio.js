@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const form = document.createElement('form');
   form.style.marginBottom = '1em';
   form.appendChild(button);
-  button.innerText = `Play all ${audios.length} MP3s`;
+  button.innerText = `Play ${audios.length} MP3s on this page`;
   let isPlaying = false;
   button.addEventListener('click', () => {
     if (!isPlaying) {
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
         currentlyPlaying.pause();
       }
       isPlaying = false;
-      button.innerText = `Play all ${audios.length} MP3s`;
+      button.innerText = `Play ${audios.length} MP3s on this page`;
     }
   });
   const tableWrapper = document.querySelector('.table-wrapper');
