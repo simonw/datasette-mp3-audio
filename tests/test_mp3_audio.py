@@ -31,7 +31,7 @@ async def test_mp3_audio(value, expect_audio):
     html = response.text
     if expect_audio:
         assert (
-            '<audio controls src="{}">Audio not supported</audio>'.format(value) in html
+            f'<audio controls src="{value}"><a href="{value}">Download MP3</a></audio>' in html
         )
     else:
         assert "<audio " not in html
