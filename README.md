@@ -24,7 +24,7 @@ The demo uses ScotRail train announcements from [matteason/scotrail-announcement
 Once installed, any cells with a value that ends in `.mp3` and starts with either `http://` or `/` or `https://` will be turned into an embedded HTML audio element like this:
 
 ```html
-<audio controls src="... value ...">Audio not supported</audio>
+<audio controls src="... value ..."><a href="...">Download MP3</a></audio>
 ```
 
 A "Play X MP3s on this page" button will be added to athe top of any table page listing more than one MP3.

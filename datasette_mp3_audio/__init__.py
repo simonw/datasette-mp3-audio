@@ -21,5 +21,5 @@ def render_cell(value):
         or value.startswith("/")
     ):
         return Markup(
-            '<audio controls src="{}">Audio not supported</audio>'.format(escape(value))
+            f'<audio controls src="{escape(value)}"><a href="{escape(value)}">Download MP3</a></audio>'
         )
